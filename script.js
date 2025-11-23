@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function getWeather(city) {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
       if(data.cod == 200) {
