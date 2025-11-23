@@ -1,7 +1,7 @@
 const apiKey = "88e03081dda30cb855fbfb0482c4bc2f";
 
 document.getElementById("getWeatherBtn").addEventListener("click", () => {
-  const city = document.getElementId("cityInput").value;
+  const city = document.getElementById("cityInput").value;
   if(city) {
     getWeather(city);
   }
